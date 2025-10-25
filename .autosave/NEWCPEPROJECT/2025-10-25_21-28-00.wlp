@@ -1,0 +1,1757 @@
+{
+    "objects": {
+        "76": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "77"
+                    }
+                }
+            ],
+            "scaling": [
+                0.9999998,
+                1.0,
+                0.9999998
+            ],
+            "translation": [
+                -3.9999997,
+                1.8000134,
+                4.0
+            ],
+            "rotation": [
+                0.0,
+                -0.3826834,
+                0.0,
+                0.9238795
+            ]
+        },
+        "77": {
+            "name": "NonVrCamera",
+            "parent": "76",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "78": {
+            "name": "EyeLeft",
+            "parent": "76",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "79": {
+            "name": "EyeRight",
+            "parent": "76",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "82": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "intensity": 1000.0,
+                        "type": "spot",
+                        "outerAngle": 120.0,
+                        "shadows": true,
+                        "shadowRange": 20.0,
+                        "innerAngle": 110.0
+                    }
+                }
+            ],
+            "scaling": [
+                1.0000011,
+                0.9999992,
+                1.0000003
+            ],
+            "translation": [
+                28.0908069,
+                32.4709701,
+                -9.6030998
+            ],
+            "rotation": [
+                0.2517569,
+                -0.7649078,
+                -0.1853627,
+                0.563183
+            ]
+        },
+        "83": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "intensity": 1000.0,
+                        "type": "spot",
+                        "shadows": true,
+                        "outerAngle": 120.0,
+                        "innerAngle": 110.0,
+                        "shadowRange": 20.0
+                    }
+                }
+            ],
+            "scaling": [
+                0.9999988,
+                0.9999969,
+                0.9999988
+            ],
+            "translation": [
+                -21.8767471,
+                21.7280864,
+                -34.6286354
+            ],
+            "rotation": [
+                -0.3265237,
+                0.1176841,
+                0.3179938,
+                0.8822769
+            ]
+        },
+        "86": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "models\\marble floor\\scene.gltf"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "root<Sketchfab_model",
+                "file": "models\\marble floor\\scene.gltf"
+            },
+            "parent": "86"
+        },
+        "88": {
+            "link": {
+                "name": "GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\marble floor\\scene.gltf"
+            },
+            "parent": "87"
+        },
+        "89": {
+            "link": {
+                "name": "Plane_2<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\marble floor\\scene.gltf"
+            },
+            "parent": "88"
+        },
+        "90": {
+            "link": {
+                "name": "Object_4<Plane_2<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\marble floor\\scene.gltf"
+            },
+            "parent": "89",
+            "scaling": [
+                7.0,
+                7.0,
+                7.0
+            ],
+            "translation": [
+                0.0288153,
+                0.0249652,
+                0.2826433
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "originalIndex": 0
+                },
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "box": {
+                            "extents": [
+                                28.0,
+                                0.25,
+                                28.0
+                            ]
+                        },
+                        "gravity": false,
+                        "static": true,
+                        "bounciness": 0.0,
+                        "groups": 253,
+                        "block": 253
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                27.0,
+                                1.0,
+                                28.0
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "80": {
+            "name": "Light.001",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "intensity": 1000.0
+                    }
+                }
+            ],
+            "translation": [
+                26.91749,
+                23.4649505,
+                20.7785053
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "93": {
+            "name": "Light.002",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "intensity": 1000.0
+                    }
+                }
+            ],
+            "translation": [
+                -14.336606,
+                28.8659439,
+                17.3296585
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "94": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "95": {
+            "link": {
+                "name": "Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "94"
+        },
+        "96": {
+            "link": {
+                "name": "RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "95"
+        },
+        "97": {
+            "link": {
+                "name": "BananaSlice_1<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "99": {
+            "link": {
+                "name": "BananaSlice_2<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "101": {
+            "link": {
+                "name": "Banana<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "102": {
+            "link": {
+                "name": "Banana_Banana_0<Banana<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "101",
+            "translation": [
+                0.0000104,
+                0.0087919,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "103": {
+            "link": {
+                "name": "RedAppleSlice<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "105": {
+            "link": {
+                "name": "RedApple<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "106": {
+            "link": {
+                "name": "RedApple_RedApple_0<RedApple<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "105"
+        },
+        "107": {
+            "link": {
+                "name": "CoconutSlice<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "109": {
+            "link": {
+                "name": "Coconut<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "110": {
+            "link": {
+                "name": "Coconut_Coconut_0<Coconut<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "109"
+        },
+        "111": {
+            "link": {
+                "name": "OrangeSlice<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "113": {
+            "link": {
+                "name": "Orange<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "114": {
+            "link": {
+                "name": "Orange_Orange_0<Orange<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "113"
+        },
+        "115": {
+            "link": {
+                "name": "Pear<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "116": {
+            "link": {
+                "name": "Pear_Pear_0<Pear<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "115"
+        },
+        "117": {
+            "link": {
+                "name": "PearSlice<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "119": {
+            "link": {
+                "name": "WatermelonSlice<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "121": {
+            "link": {
+                "name": "Watermelon<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "122": {
+            "link": {
+                "name": "Watermelon_Watermelon_0<Watermelon<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "121"
+        },
+        "123": {
+            "link": {
+                "name": "Tomato<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "124": {
+            "link": {
+                "name": "Tomato_Tomato_0<Tomato<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "123"
+        },
+        "125": {
+            "link": {
+                "name": "TomatoSlice<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "127": {
+            "link": {
+                "name": "GreenAppleSlice<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "129": {
+            "link": {
+                "name": "GreenApple<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "96"
+        },
+        "130": {
+            "link": {
+                "name": "GreenApple_GreenApple_0<GreenApple<RootNode<Fruits.fbx<Sketchfab_model",
+                "file": "models\\fruits\\scene.gltf"
+            },
+            "parent": "129",
+            "components": [
+                {
+                    "originalIndex": 0
+                },
+                {
+                    "type": "physx"
+                },
+                {
+                    "type": "collision"
+                }
+            ],
+            "translation": [
+                0.0,
+                -0.0,
+                -1.1920928955078125e-7
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "13": {
+            "link": {
+                "name": "Object_0",
+                "file": "models\\marble floor\\scene.gltf"
+            }
+        },
+        "14": {
+            "link": {
+                "name": "Object_0-uv1",
+                "file": "models\\marble floor\\scene.gltf"
+            }
+        },
+        "15": {
+            "link": {
+                "name": "BananaSlice_1_Banana_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "16": {
+            "link": {
+                "name": "BananaSlice_2_Banana_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "17": {
+            "link": {
+                "name": "Banana_Banana_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "18": {
+            "link": {
+                "name": "RedAppleSlice_RedAppleSliced_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "19": {
+            "link": {
+                "name": "RedAppleSlice_RedAppleSliced_0-uv1",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "20": {
+            "link": {
+                "name": "RedApple_RedApple_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "21": {
+            "link": {
+                "name": "RedApple_RedApple_0-uv1",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "22": {
+            "link": {
+                "name": "CoconutSlice_CoconutSliced_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "23": {
+            "link": {
+                "name": "CoconutSlice_CoconutSliced_0-uv1",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "24": {
+            "link": {
+                "name": "Coconut_Coconut_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "25": {
+            "link": {
+                "name": "Coconut_Coconut_0-uv1",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "26": {
+            "link": {
+                "name": "OrangeSlice_OrangeSliced_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "27": {
+            "link": {
+                "name": "Orange_Orange_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Pear_Pear_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "PearSlice_PearSliced_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "WatermelonSlice_WatermelonSliced_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "WatermelonSlice_WatermelonSliced_0-uv1",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "Watermelon_Watermelon_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "33": {
+            "link": {
+                "name": "Watermelon_Watermelon_0-uv1",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Tomato_Tomato_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "TomatoSlice_TomatoSliced_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "GreenAppleSlice_GreenAppleSliced_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "GreenAppleSlice_GreenAppleSliced_0-uv1",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "38": {
+            "link": {
+                "name": "GreenApple_GreenApple_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "GreenApple_GreenApple_0-uv1",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "font": "55"
+            }
+        },
+        "20": {
+            "name": "White",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1,
+                "emissiveColor": [
+                    0.2,
+                    0.2,
+                    0.2,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ]
+            },
+            "pipeline": "37"
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.1921568,
+                    0.0,
+                    0.1310161,
+                    1.0
+                ]
+            },
+            "pipeline": "37"
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.2588235,
+                    0.2080737,
+                    0.0,
+                    1.0
+                ]
+            },
+            "pipeline": "37"
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
+                    0.0,
+                    0.1686274,
+                    0.10305,
+                    1.0
+                ]
+            },
+            "pipeline": "37"
+        },
+        "89": {
+            "name": "Sky",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1,
+                "emissiveColor": [
+                    0.2,
+                    0.2,
+                    0.2,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ]
+            },
+            "pipeline": "54",
+            "Sky": {
+                "colorStop3": [
+                    0.57584,
+                    0.5798863,
+                    0.5803921,
+                    1.0
+                ],
+                "colorStop2": [
+                    0.2023221,
+                    0.2037438,
+                    0.2039215,
+                    1.0
+                ],
+                "colorStop1": [
+                    0.2023221,
+                    0.2037438,
+                    0.2039215,
+                    1.0
+                ],
+                "colorStop0": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "90": {
+            "link": {
+                "name": "Material.001",
+                "file": "models\\marble floor\\scene.gltf"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "Banana",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "RedAppleSliced",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "RedApple",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "CoconutSliced",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "95": {
+            "link": {
+                "name": "Coconut",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "96": {
+            "link": {
+                "name": "OrangeSliced",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "97": {
+            "link": {
+                "name": "Orange",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "98": {
+            "link": {
+                "name": "Pear",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "99": {
+            "link": {
+                "name": "PearSliced",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "100": {
+            "link": {
+                "name": "WatermelonSliced",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "101": {
+            "link": {
+                "name": "Watermelon",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "102": {
+            "link": {
+                "name": "Tomato",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "103": {
+            "link": {
+                "name": "TomatoSliced",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "104": {
+            "link": {
+                "name": "GreenAppleSliced",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "105": {
+            "link": {
+                "name": "GreenApple",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        }
+    },
+    "shaders": {
+        "2": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "32": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "39": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "42": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "43": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "45": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "46": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "49": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "50": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "52": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "53": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        },
+        "56": {
+            "link": {
+                "name": "lib\\Color.glsl",
+                "file": "default"
+            }
+        },
+        "57": {
+            "link": {
+                "name": "lib\\Compatibility.glsl",
+                "file": "default"
+            }
+        },
+        "58": {
+            "link": {
+                "name": "lib\\CoordinateSystems.glsl",
+                "file": "default"
+            }
+        },
+        "59": {
+            "link": {
+                "name": "lib\\GI.glsl",
+                "file": "default"
+            }
+        },
+        "60": {
+            "link": {
+                "name": "lib\\Inputs.glsl",
+                "file": "default"
+            }
+        },
+        "61": {
+            "link": {
+                "name": "lib\\Lights.glsl",
+                "file": "default"
+            }
+        },
+        "62": {
+            "link": {
+                "name": "lib\\Materials.glsl",
+                "file": "default"
+            }
+        },
+        "63": {
+            "link": {
+                "name": "lib\\Math.glsl",
+                "file": "default"
+            }
+        },
+        "64": {
+            "link": {
+                "name": "lib\\MorphTargets.glsl",
+                "file": "default"
+            }
+        },
+        "65": {
+            "link": {
+                "name": "lib\\Packing.glsl",
+                "file": "default"
+            }
+        },
+        "68": {
+            "link": {
+                "name": "lib\\PhysicalBSDF.glsl",
+                "file": "default"
+            }
+        },
+        "69": {
+            "link": {
+                "name": "lib\\Quaternion.glsl",
+                "file": "default"
+            }
+        },
+        "70": {
+            "link": {
+                "name": "lib\\Slug.frag.glsl",
+                "file": "default"
+            }
+        },
+        "71": {
+            "link": {
+                "name": "lib\\Slug.vert.glsl",
+                "file": "default"
+            }
+        },
+        "72": {
+            "link": {
+                "name": "lib\\Surface.glsl",
+                "file": "default"
+            }
+        },
+        "73": {
+            "link": {
+                "name": "lib\\Textures.glsl",
+                "file": "default"
+            }
+        },
+        "75": {
+            "link": {
+                "name": "lib\\Uniforms.glsl",
+                "file": "default"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "AtmosphericSky.frag",
+                "file": "default"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "lib\\SkyProcedural.glsl",
+                "file": "default"
+            }
+        },
+        "88": {
+            "link": {
+                "name": "lib\\Compatibility.glsl",
+                "file": "default"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "lib\\GI.glsl",
+                "file": "default"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "lib\\Inputs.glsl",
+                "file": "default"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "lib\\Lights.glsl",
+                "file": "default"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "lib\\Materials.glsl",
+                "file": "default"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "lib\\Packing.glsl",
+                "file": "default"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "lib\\Slug.frag.glsl",
+                "file": "default"
+            }
+        },
+        "95": {
+            "link": {
+                "name": "lib\\Slug.vert.glsl",
+                "file": "default"
+            }
+        },
+        "96": {
+            "link": {
+                "name": "lib\\Surface.glsl",
+                "file": "default"
+            }
+        },
+        "97": {
+            "link": {
+                "name": "lib\\Textures.glsl",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "NEW CPE PROJECT",
+            "version": [
+                1,
+                4,
+                7
+            ]
+        },
+        "xr": {
+            "leftEyeObject": "78",
+            "rightEyeObject": "79"
+        },
+        "scripting": {
+            "application": {
+                "output": "NEW CPE PROJECT-app.js",
+                "bundling": "esbuild"
+            },
+            "components": {
+                "output": "NEW CPE PROJECT-bundle.js"
+            },
+            "libraryPaths": [
+                "/js/lib/"
+            ]
+        },
+        "rendering": {
+            "hdr": {
+                "exposure": 1.5
+            },
+            "sky": {
+                "enabled": true,
+                "material": "89"
+            },
+            "environment": {
+                "bakingMode": "sky",
+                "material": "89"
+            }
+        },
+        "runtime": {
+            "viewObject": "77"
+        },
+        "physx": {
+            "enable": true
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "pipelines": {
+        "33": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "34": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "35": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "36": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "37": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            },
+            "features": {
+                "WITH_EMISSIVE": true
+            }
+        },
+        "38": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "WITH_EMISSIVE": true
+            }
+        },
+        "40": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "41": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "44": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            },
+            "features": {
+                "SEPARATE_OCCLUSION_TEXTURE": true
+            }
+        },
+        "48": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "SEPARATE_OCCLUSION_TEXTURE": true
+            }
+        },
+        "51": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "54": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            },
+            "features": {
+                "GRADIENT": true,
+                "TEXTURED": false,
+                "GRADIENT_4_STOPS": true,
+                "ENVIRONMENT_PROBE": false
+            }
+        },
+        "66": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            },
+            "features": {
+                "WITH_EMISSIVE": true
+            }
+        },
+        "67": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            },
+            "features": {
+                "WITH_EMISSIVE": true
+            }
+        },
+        "74": {
+            "link": {
+                "name": "TileFeedback",
+                "file": "default"
+            }
+        },
+        "88": {
+            "link": {
+                "name": "AtmosphericSky",
+                "file": "default"
+            }
+        }
+    },
+    "textures": {
+        "1": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\marble floor\\scene.gltf"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\marble floor\\scene.gltf"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\marble floor\\scene.gltf"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "7": {
+            "link": {
+                "name": "texture_3",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "texture_4",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "texture_5",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "texture_6",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "texture_7",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "texture_8",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "13": {
+            "link": {
+                "name": "texture_9",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "14": {
+            "link": {
+                "name": "texture_10",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "15": {
+            "link": {
+                "name": "texture_11",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "16": {
+            "link": {
+                "name": "texture_12",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "17": {
+            "link": {
+                "name": "texture_13",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "18": {
+            "link": {
+                "name": "texture_14",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "19": {
+            "link": {
+                "name": "texture_15",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "20": {
+            "link": {
+                "name": "texture_16",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "21": {
+            "link": {
+                "name": "texture_17",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "22": {
+            "link": {
+                "name": "texture_18",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "23": {
+            "link": {
+                "name": "texture_19",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "24": {
+            "link": {
+                "name": "texture_20",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        }
+    },
+    "images": {
+        "1": {
+            "link": {
+                "name": "image_0",
+                "file": "models\\marble floor\\scene.gltf"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "image_1",
+                "file": "models\\marble floor\\scene.gltf"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "image_2",
+                "file": "models\\marble floor\\scene.gltf"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "image_0",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "image_1",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "image_2",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "7": {
+            "link": {
+                "name": "image_3",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "image_4",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "image_5",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "image_6",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "image_7",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "image_8",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "13": {
+            "link": {
+                "name": "image_9",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "14": {
+            "link": {
+                "name": "image_10",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "15": {
+            "link": {
+                "name": "image_11",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "16": {
+            "link": {
+                "name": "image_12",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "17": {
+            "link": {
+                "name": "image_13",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "18": {
+            "link": {
+                "name": "image_14",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "19": {
+            "link": {
+                "name": "image_15",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "20": {
+            "link": {
+                "name": "image_16",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "21": {
+            "link": {
+                "name": "image_17",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "22": {
+            "link": {
+                "name": "image_18",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "23": {
+            "link": {
+                "name": "image_19",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        },
+        "24": {
+            "link": {
+                "name": "image_20",
+                "file": "models\\fruits\\scene.gltf"
+            }
+        }
+    },
+    "fonts": {
+        "55": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "languages": {},
+    "files": {
+        "1": {
+            "fileName": "models/marble floor/scene.gltf",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        },
+        "2": {
+            "fileName": "models/fruits/scene.gltf",
+            "importerName": "",
+            "importPhysicalAsPhongMaterials": true
+        }
+    },
+    "morphTargets": {},
+    "particleEffects": {}
+}
