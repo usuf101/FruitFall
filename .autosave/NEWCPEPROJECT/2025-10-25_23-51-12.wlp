@@ -336,11 +336,7 @@
                 "file": "models\\fruits\\scene.gltf"
             },
             "parent": "101",
-            "translation": [
-                -7.2812452,
-                -3.0622658,
-                30.0000038
-            ],
+            "hiddenForLightBaking": false,
             "rotation": [
                 0.0,
                 0.0,
@@ -349,7 +345,8 @@
             ],
             "components": [
                 {
-                    "originalIndex": 0
+                    "originalIndex": 0,
+                    "active": true
                 },
                 {
                     "type": "physx"
@@ -357,6 +354,11 @@
                 {
                     "type": "collision"
                 }
+            ],
+            "translation": [
+                -7.2812452,
+                1.0,
+                30.0000038
             ]
         },
         "103": {
@@ -658,6 +660,61 @@
                 0.0,
                 0.0,
                 1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "131": {
+            "name": "fruit spawner",
+            "translation": [
+                0.0,
+                62.3198394,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "fruit-spawner",
+                    "active": true,
+                    "fruit-spawner": {
+                        "fruitPrefabs": "Banana_Banana_0, Pear_Pear_0, Tomato_Tomato_0, GreenApple_GreenApple_0, Orange_Orange_0, RedApple_RedApple_0, Coconut_Coconut_0, Watermelon_Watermelon_0",
+                        "randomSpawnArea": [
+                            2.0,
+                            1.0,
+                            2.0
+                        ]
+                    }
+                }
+            ]
+        },
+        "132": {
+            "name": "Mesh",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "89"
+                    }
+                }
+            ],
+            "scaling": [
+                100.0,
+                100.0,
+                100.0
             ]
         }
     },
@@ -1025,27 +1082,27 @@
             "pipeline": "54",
             "Sky": {
                 "colorStop3": [
-                    0.57584,
-                    0.5798863,
-                    0.5803921,
+                    0.5196462,
+                    0.8176504,
+                    0.8549019,
                     1.0
                 ],
                 "colorStop2": [
-                    0.2023221,
-                    0.2037438,
-                    0.2039215,
+                    0.2193002,
+                    0.5646755,
+                    0.6078431,
                     1.0
                 ],
                 "colorStop1": [
-                    0.2023221,
-                    0.2037438,
-                    0.2039215,
+                    0.2640214,
+                    0.5452429,
+                    0.5803921,
                     1.0
                 ],
                 "colorStop0": [
-                    0.0,
-                    0.0,
-                    0.0,
+                    0.2582083,
+                    0.5725489,
+                    0.2656045,
                     1.0
                 ]
             }

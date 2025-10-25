@@ -37,6 +37,22 @@
                 {
                     "type": "mouse-look"
                 }
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "translation": [
+                0.9821334,
+                0.000105,
+                11.9505939
             ]
         },
         "78": {
@@ -320,16 +336,29 @@
                 "file": "models\\fruits\\scene.gltf"
             },
             "parent": "101",
-            "translation": [
-                0.0000104,
-                0.0087919,
-                0.0
-            ],
+            "hiddenForLightBaking": false,
             "rotation": [
                 0.0,
                 0.0,
                 0.0,
                 1.0
+            ],
+            "components": [
+                {
+                    "originalIndex": 0,
+                    "active": true
+                },
+                {
+                    "type": "physx"
+                },
+                {
+                    "type": "collision"
+                }
+            ],
+            "translation": [
+                -100.0,
+                50.0,
+                30.0000038
             ],
             "scaling": [
                 1.0,
@@ -356,7 +385,29 @@
                 "name": "RedApple_RedApple_0<RedApple<RootNode<Fruits.fbx<Sketchfab_model",
                 "file": "models\\fruits\\scene.gltf"
             },
-            "parent": "105"
+            "parent": "105",
+            "translation": [
+                -100.0,
+                50.0,
+                30.0000019
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "originalIndex": 0
+                },
+                {
+                    "type": "physx"
+                },
+                {
+                    "type": "collision"
+                }
+            ]
         },
         "107": {
             "link": {
@@ -377,7 +428,29 @@
                 "name": "Coconut_Coconut_0<Coconut<RootNode<Fruits.fbx<Sketchfab_model",
                 "file": "models\\fruits\\scene.gltf"
             },
-            "parent": "109"
+            "parent": "109",
+            "components": [
+                {
+                    "originalIndex": 0
+                },
+                {
+                    "type": "physx"
+                },
+                {
+                    "type": "collision"
+                }
+            ],
+            "translation": [
+                -100.0,
+                50.0,
+                29.999998
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
         },
         "111": {
             "link": {
@@ -398,7 +471,29 @@
                 "name": "Orange_Orange_0<Orange<RootNode<Fruits.fbx<Sketchfab_model",
                 "file": "models\\fruits\\scene.gltf"
             },
-            "parent": "113"
+            "parent": "113",
+            "components": [
+                {
+                    "originalIndex": 0
+                },
+                {
+                    "type": "physx"
+                },
+                {
+                    "type": "collision"
+                }
+            ],
+            "translation": [
+                -100.0,
+                50.0,
+                29.999998
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
         },
         "115": {
             "link": {
@@ -412,7 +507,29 @@
                 "name": "Pear_Pear_0<Pear<RootNode<Fruits.fbx<Sketchfab_model",
                 "file": "models\\fruits\\scene.gltf"
             },
-            "parent": "115"
+            "parent": "115",
+            "translation": [
+                -100.0,
+                50.0,
+                30.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "originalIndex": 0
+                },
+                {
+                    "type": "physx"
+                },
+                {
+                    "type": "collision"
+                }
+            ]
         },
         "117": {
             "link": {
@@ -440,7 +557,29 @@
                 "name": "Watermelon_Watermelon_0<Watermelon<RootNode<Fruits.fbx<Sketchfab_model",
                 "file": "models\\fruits\\scene.gltf"
             },
-            "parent": "121"
+            "parent": "121",
+            "components": [
+                {
+                    "originalIndex": 0
+                },
+                {
+                    "type": "physx"
+                },
+                {
+                    "type": "collision"
+                }
+            ],
+            "translation": [
+                -100.0,
+                50.0,
+                30.0000038
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
         },
         "123": {
             "link": {
@@ -454,7 +593,29 @@
                 "name": "Tomato_Tomato_0<Tomato<RootNode<Fruits.fbx<Sketchfab_model",
                 "file": "models\\fruits\\scene.gltf"
             },
-            "parent": "123"
+            "parent": "123",
+            "components": [
+                {
+                    "originalIndex": 0
+                },
+                {
+                    "type": "physx"
+                },
+                {
+                    "type": "collision"
+                }
+            ],
+            "translation": [
+                -100.0,
+                50.0,
+                30.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
         },
         "125": {
             "link": {
@@ -495,9 +656,23 @@
                 }
             ],
             "translation": [
+                -100.0,
+                50.0,
+                30.1897392
+            ],
+            "rotation": [
                 0.0,
-                -0.0,
-                -1.1920928955078125e-7
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "131": {
+            "name": "fruit spawner",
+            "translation": [
+                0.0,
+                62.3198394,
+                0.0
             ],
             "rotation": [
                 0.0,
@@ -509,6 +684,37 @@
                 1.0,
                 1.0,
                 1.0
+            ],
+            "components": [
+                {
+                    "type": "fruit-spawner",
+                    "active": true,
+                    "fruit-spawner": {
+                        "fruitPrefabs": "Banana_Banana_0, Pear_Pear_0, Tomato_Tomato_0, GreenApple_GreenApple_0, Orange_Orange_0, RedApple_RedApple_0, Coconut_Coconut_0, Watermelon_Watermelon_0",
+                        "randomSpawnArea": [
+                            2.0,
+                            1.0,
+                            2.0
+                        ]
+                    }
+                }
+            ]
+        },
+        "132": {
+            "name": "Mesh",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "89"
+                    }
+                }
+            ],
+            "scaling": [
+                100.0,
+                100.0,
+                100.0
             ]
         }
     },
@@ -876,27 +1082,27 @@
             "pipeline": "54",
             "Sky": {
                 "colorStop3": [
-                    0.57584,
-                    0.5798863,
-                    0.5803921,
+                    0.5196462,
+                    0.8176504,
+                    0.8549019,
                     1.0
                 ],
                 "colorStop2": [
-                    0.2023221,
-                    0.2037438,
-                    0.2039215,
+                    0.2193002,
+                    0.5646755,
+                    0.6078431,
                     1.0
                 ],
                 "colorStop1": [
-                    0.2023221,
-                    0.2037438,
-                    0.2039215,
+                    0.2640214,
+                    0.5452429,
+                    0.5803921,
                     1.0
                 ],
                 "colorStop0": [
-                    0.0,
-                    0.0,
-                    0.0,
+                    0.2582083,
+                    0.5725489,
+                    0.2656045,
                     1.0
                 ]
             }
